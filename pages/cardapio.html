@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio - Sakura Restaurante Japonês</title>
+    <link rel="stylesheet" href="../src/css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="../src/assets/img/logo.japa.png" alt="Sakura">
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="cardapio.html" class="active">Cardápio</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+                <div class="menu-mobile">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h2>Nosso Cardápio</h2>
+                <p>Descubra os sabores autênticos da culinária japonesa</p>
+            </div>
+        </section>
+
+        <section class="menu-categories">
+            <div class="container">
+                <div class="category-tabs">
+                    <button class="tab-btn active" data-category="entradas">Entradas</button>
+                    <button class="tab-btn" data-category="sushi">Sushi & Sashimi</button>
+                    <button class="tab-btn" data-category="pratos-quentes">Pratos Quentes</button>
+                    <button class="tab-btn" data-category="sobremesas">Sobremesas</button>
+                    <button class="tab-btn" data-category="bebidas">Bebidas</button>
+                </div>
+
+                <div class="menu-items" id="entradas">
+                    <h3 class="category-title">Entradas</h3>
+                    <div class="menu-grid">
+                        <div class="menu-card">
+                            <img src="../src/assets/img/imagem10.jpg" alt="Edamame">
+                            <div class="menu-info">
+                                <h4>Edamame</h4>
+                                <p>Vagens de soja cozidas no vapor com sal marinho.</p>
+                                <span class="price">R$ 22,00</span>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <img src="../src/assets/img/imagem1.jpg" alt="Gyoza">
+                            <div class="menu-info">
+                                <h4>Gyoza (5 unidades)</h4>
+                                <p>Pastéis japoneses grelhados, recheados com carne suína e legumes.</p>
+                                <span class="price">R$ 28,00</span>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <img src="../src/assets/img/imagem2.webp" alt="Tempura">
+                            <div class="menu-info">
+                                <h4>Tempura Misto</h4>
+                                <p>Legumes e camarões empanados na tradicional massa japonesa.</p>
+                                <span class="price">R$ 42,00</span>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <img src="../src/assets/img/imagem3.jpg" alt="Sunomono">
+                            <div class="menu-info">
+                                <h4>Sunomono</h4>
+                                <p>Salada de pepino com gergelim e molho agridoce.</p>
+                                <span class="price">R$ 18,00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-items" id="sushi" style="display: none;">
+                    <h3 class="category-title">Sushi & Sashimi</h3>
+                    <div class="menu-grid">
+                        <div class="menu-card">
+                            <img src="../src/assets/img/sushi-combo.jpg" alt="Combo Sushi">
+                            <div class="menu-info">
+                                <h4>Combo Sakura (24 peças)</h4>
+                                <p>Seleção especial do chef com 12 sushis, 8 sashimis e 4 hot rolls.</p>
+                                <span class="price">R$ 120,00</span>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <img src="../src/assets/img/sashimi.jpg" alt="Sashimi">
+                            <div class="menu-info">
+                                <h4>Sashimi Misto (15 peças)</h4>
+                                <p>Fatias de peixe cru: salmão, atum e peixe branco.</p>
+                                <span class="price">R$ 75,00</span>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <img src="../src/assets/img/uramaki.jpg" alt="Uramaki">
+                            <div class="menu-info">
+                                <h4>Uramaki Califórnia (8 peças)</h4>
+                                <p>Enrolado com manga, pepino, kani e gergelim.</p>
+                                <span class="price">R$ 32,00</span>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <img src="../src/assets/img/temaki.jpg" alt="Temaki">
+                            <div class="menu-info">
+                                <h4>Temaki Salmão</h4>
+                                <p>Cone de alga recheado com arroz, salmão, cebolinha e cream cheese.</p>
+                                <span class="price">R$ 28,00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-items" id="pratos-quentes" style="display: none;">
+                    <h3 class="category-title">Pratos Quentes</h3>
+                    <div class="menu-grid">
+                        <div class="menu-card">
+                            <img src="../src/assets/img/ramen.jpg" alt="Ramen">
+                            <div class="menu-info">
+                                <h4>Ramen Tonkotsu</h4>
+                                <p>Macarrão em caldo de porco, com fatias de carne, ovo, cebolinha e nori.</p>
+                                <span class="price">R$ 48,00</span>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <img src="../src/assets/img/yakisoba.jpg" alt="Yakisoba">
+                            <div class="menu-info">
+                                <h4>Yakisoba</h4>
+                                <p>Macarrão salteado com legumes e proteína à escolha (carne, frango ou frutos do mar).</p>
+                                <span class="price">R$ 45,00</span>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <img src="../src/assets/img/donburi.jpg" alt="Donburi">
+                            <div class="menu-info">
+                                <h4>Katsudon</h4>
+                                <p>Tigela de arroz coberta com filé de porco empanado, ovo e cebola.</p>
+                                <span class="price">R$ 42,00</span>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <img src="../src/assets/img/imagem4.webp" alt="Teppanyaki">
+                            <div class="menu-info">
+                                <h4>Teppanyaki de Salmão</h4>
+                                <p>Salmão grelhado na chapa com legumes e molho teriyaki.</p>
+                                <span class="price">R$ 58,00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-items" id="sobremesas" style="display: none;">
+                    <h3 class="category-title">Sobremesas</h3>
+                    <div class="menu-grid">
+                        <div class="menu-card">
+                            <img src="../src/assets/img/mochi.jpg" alt="Mochi">
+                            <div class="menu-info">
+                                <h4>Mochi (2 unidades)</h4>
+                                <p>Bolinho de arroz recheado com sorvete. Sabores: matcha, chocolate ou morango.</p>
+                                <span class="price">R$ 22,00</span>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <img src="../src/assets/img/dorayaki.jpg" alt="Dorayaki">
+                            <div class="menu-info">
+                                <h4>Dorayaki</h4>
+                                <p>Panqueca japonesa recheada com pasta de feijão doce.</p>
+                                <span class="price">R$ 18,00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-items" id="bebidas" style="display: none;">
+                    <h3 class="category-title">Bebidas</h3>
+                    <div class="menu-grid">
+                        <div class="menu-card">
+                            <img src="../src/assets/img/imagem5.jpg" alt="Sake">
+                            <div class="menu-info">
+                                <h4>Sake Tradicional</h4>
+                                <p>Bebida fermentada de arroz (180ml).</p>
+                                <span class="price">R$ 35,00</span>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <img src="../src/assets/img/imagem9.jpg" alt="Chá Verde">
+                            <div class="menu-info">
+                                <h4>Chá Verde</h4>
+                                <p>Tradicional chá japonês (bule).</p>
+                                <span class="price">R$ 15,00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Sakura</h2>
+                    <p>Restaurante Japonês</p>
+                </div>
+                <div class="footer-info">
+                    <div class="footer-section">
+                        <h3>Horário de Funcionamento</h3>
+                        <p>Segunda a Sexta: 11h30 - 23h00</p>
+                        <p>Sábados e Domingos: 12h00 - 00h00</p>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Contato</h3>
+                        <p><i class="fas fa-phone"></i> (11) 9999-8888</p>
+                        <p><i class="fas fa-envelope"></i> contato@sakura.com.br</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Rua das Cerejeiras, 123 - São Paulo</p>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Redes Sociais</h3>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Sakura Restaurante Japonês. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../src/js/script.js"></script>
+</body>
+</html>
